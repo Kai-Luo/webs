@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return View::make('pages.home');
 });
 Route::any("/elements", function() {
-	return view('elements');
+	return View::make('pages.elements');
 });
 Route::any("/generic", function() {
-	return view('generic');
+	return View::make('pages.generic');
 });
